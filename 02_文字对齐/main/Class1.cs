@@ -33,20 +33,23 @@ namespace main
             typedValue.SetValue(new TypedValue(0, "TEXT"), 0);
             SelectionSet acSSet = mycad.GetSelectionSet("GetSelection", null, typedValue);
 
-            //判断选择集内容
+            //判断选择集内容是否为空
             if(acSSet != null)
             {
                 foreach (SelectedObject mySObj in acSSet)
                 {
-                    if(mySObj != null)
+                    if(mySObj != null) //判断选择项目是否无误
                     {
                         using (Transaction acTrans = acCurDb.TransactionManager.StartTransaction())
                         {
                             DBText myText = acTrans.GetObject(mySObj.ObjectId, OpenMode.ForWrite) as DBText;
-                            //设置对齐方式
+                            //设置文字对齐方式
                             myText.HorizontalMode = TextHorizontalMode.TextMid;
+                            //获取文字坐标
                             Point3d myPt = myText.Position;
+                            //设置文字对齐坐标
                             myText.AlignmentPoint = new Point3d(pt.X, myPt.Y, 0);
+                            //提交事务
                             acTrans.Commit();
                         }
                     }
