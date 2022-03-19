@@ -69,3 +69,9 @@ C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否存在�
 C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否存在碎数\main\obj\Debug\main.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否存在碎数\main\obj\Debug\main.dll
 C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否存在碎数\main\obj\Debug\main.pdb
+C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否为斜线\main\bin\Debug\main.dll
+C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否为斜线\main\bin\Debug\main.pdb
+C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否为斜线\main\obj\Debug\main.csproj.AssemblyReference.cache
+C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否为斜线\main\obj\Debug\main.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否为斜线\main\obj\Debug\main.dll
+C:\Users\Administrator\OneDrive\Code\C#\CAD_Develop\04_判断线段是否为斜线\main\obj\Debug\main.pdb

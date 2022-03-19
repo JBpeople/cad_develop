@@ -17,7 +17,7 @@ namespace main
 {
     public class Class1
     {
-        [CommandMethod("judgmentslash")]
+        [CommandMethod("getslash")]
         public static void JudgmentSlash()
         {
             PtCadLib ac = new PtCadLib();
@@ -43,12 +43,17 @@ namespace main
                     SelectionSet acSS = ac.GetSelectionSet("GetSelection", null, acTypVal);
                     if (acSS != null) //判断选择集是否为空
                     {
-                        foreach(SelectedObject acSObj in acSS)
+                        foreach (SelectedObject acSObj in acSS)
                         {
-                            if(acSObj != null) //判断选择集中的项目是否正常
+                            if (acSObj != null) //判断选择集中的项目是否正常
                             {
                                 Curve acCurve = acTrans.GetObject(acSObj.ObjectId, OpenMode.ForRead) as Curve;
-                                if((acCurve.StartPoint.X != acCurve.EndPoint.X) || (acCurve.StartPoint.Y != acCurve.EndPoint.Y)) //判断线段是否为斜线
+                                //获取线段起始点和终点的X，Y坐标
+                                string sPtX = acCurve.StartPoint.X.ToString("0.00");
+                                string sPtY = acCurve.StartPoint.Y.ToString("0.00");
+                                string ePTX = acCurve.EndPoint.X.ToString("0.00");
+                                string ePTY = acCurve.EndPoint.Y.ToString("0.00");
+                                if ((sPtX != ePTX) && (sPtY != ePTY)) //判断线段是否为斜线
                                 {
                                     Extents3d acExt = acCurve.GeometricExtents; //获取斜线的包围盒
                                     Point3d pt1 = acExt.MaxPoint;
