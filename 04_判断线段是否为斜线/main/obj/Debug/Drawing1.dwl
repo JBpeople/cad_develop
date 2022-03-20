@@ -1,3 +1,0 @@
-Administrator
-BESTCOMPUTER 
-2022Äê3ÔÂ19ÈÕ  20:17:28
