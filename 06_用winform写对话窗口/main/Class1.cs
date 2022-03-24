@@ -17,14 +17,14 @@ namespace main
 {
     public class Class1
     {
-        [CommandMethod("aa")]
+        [CommandMethod("bb")]
         public static void JudgmentSlash()
         {
             PtCadLib ac = new PtCadLib();
 
             FirstForm frm = new FirstForm();
-            //Autodesk.AutoCAD.ApplicationServices.Application.ShowModalDialog(frm); //在CAD中模态显示窗口
-            Autodesk.AutoCAD.ApplicationServices.Application.ShowModelessDialog(frm); //在CAD中非模态显示窗口
+            Autodesk.AutoCAD.ApplicationServices.Application.ShowModalDialog(frm); //在CAD中模态显示窗口
+            //Autodesk.AutoCAD.ApplicationServices.Application.ShowModelessDialog(frm); //在CAD中非模态显示窗口
         }
     }
 }

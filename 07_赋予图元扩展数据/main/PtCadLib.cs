@@ -551,7 +551,7 @@ namespace main
         /// <param name="dictName">字典名称</param>
         /// <param name="noDxfcode">组码</param>
         /// <returns></returns>
-        public object ReadselfDictionarybydxfcode(string dictName, int noDxfcode)
+        public object ReadselfDictionaryByDxfcode(string dictName, int noDxfcode)
         {
             Database acCurDb = acDoc.Database;
             object myResult = null;
